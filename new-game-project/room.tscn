@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbtud5ighdlp8"]
+
+[ext_resource type="Script" path="res://Room.cs" id="1_rjxs7"]
+[ext_resource type="TileSet" uid="uid://bg66w1ddhwh57" path="res://bricks.tres" id="2_ii0jg"]
+[ext_resource type="TileSet" uid="uid://dic8jxkq3n1kv" path="res://floor.tres" id="3_fl4tj"]
+
+[node name="Room" type="Node2D"]
+script = ExtResource("1_rjxs7")
+
+[node name="WallLayer" type="TileMapLayer" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 2
+use_parent_material = true
+tile_set = ExtResource("2_ii0jg")
+
+[node name="FloorLayer" type="TileMapLayer" parent="."]
+show_behind_parent = true
+top_level = true
+z_index = 1
+use_parent_material = true
+tile_set = ExtResource("3_fl4tj")

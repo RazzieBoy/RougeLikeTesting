@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce2o0lq0colpj"]
+
+[ext_resource type="Script" path="res://DungeonGen.cs" id="1_txwyn"]
+[ext_resource type="PackedScene" uid="uid://bbtud5ighdlp8" path="res://room.tscn" id="2_8ux15"]
+
+[node name="DungeonGenerator" type="Node2D"]
+light_mask = 31
+position = Vector2(581, 322)
+script = ExtResource("1_txwyn")
+maxRooms = 10
+roomScene = ExtResource("2_8ux15")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+light_mask = 31
