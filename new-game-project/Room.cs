@@ -36,13 +36,13 @@ public partial class Room : Node2D
 
 	private void SetTiles(TileMapLayer layer, int tileId)
 {
-	var tileSet = ResourceLoader.Load<TileSet>("floor.tres");
+	var tileSet = ResourceLoader.Load<TileSet>("res://wood.tres");
 	if (tileSet == null)
 	{
-		GD.Print("Failed to load TileSet: floor.tres");
+		GD.Print("Failed to load TileSet: wood.tres");
 		return;
 	}
-	GD.Print("TileSet loaded: floor.tres");
+	GD.Print("TileSet loaded: wood.tres");
 	layer.TileSet = tileSet;
 
 	for (int x = 0; x < 10; x++)
